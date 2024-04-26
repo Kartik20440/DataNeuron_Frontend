@@ -20,7 +20,7 @@ function App() {
   };
 
   const handleUpdate = () => {
-    axios.put("https://dataneuron-tnn1.onrender.com/update", { age })
+    axios.put("https://dataneuron-tnn1.onrender.com/update", { name, age })
       .then(response => {
         setSuccessMessage("Data updated successfully.");
         setAge("");
